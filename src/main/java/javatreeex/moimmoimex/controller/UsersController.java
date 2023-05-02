@@ -1,11 +1,16 @@
 package javatreeex.moimmoimex.controller;
 
 import javatreeex.moimmoimex.domain.UserDo;
+import javatreeex.moimmoimex.domain.UserProfileDto;
 import javatreeex.moimmoimex.mapper.UserMapper;
+import javatreeex.moimmoimex.mapper.UserProfileMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import javax.servlet.http.*;
 
 @Controller
 @RequiredArgsConstructor
@@ -13,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 public class UsersController {
 
     private final UserMapper userMapper;
+    private final UserProfileMapper userProfileMapper;
 
 /*
 
@@ -48,7 +54,8 @@ public class UsersController {
     @PostMapping("login")
     public String login(@RequestParam("userId") String userId,
                         @RequestParam("userPassword") String userPassword,
-                        Model model) {
+                        Model model, RedirectAttributes redirectAttributes,
+                        HttpServletRequest request) {
 
         UserDo authenticatedUser = userMapper.getUserByCredentials(userId, userPassword);
 
@@ -56,8 +63,13 @@ public class UsersController {
             model.addAttribute("errorMessage", "Invalid credentials");
             return "loginForm";
         } else {
-            model.addAttribute("user", authenticatedUser);
-            return "userPage";
+            // Add the authenticated user to the session
+            HttpSession session = request.getSession();
+            session.setAttribute("authenticatedUser", authenticatedUser);
+
+            // Redirect to the profile page
+            redirectAttributes.addAttribute("userId", authenticatedUser.getUserId());
+            return "redirect:/profile";
         }
     }
 }
