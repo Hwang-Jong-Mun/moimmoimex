@@ -15,10 +15,10 @@ public class UserProfileDto {
     private final String userProfileImage;
     private final Double userMoimReviewScoreAvg;
     private final Integer userHostingCount;
-    private final Date userBirth;
+    private final String userBirth;
     private final String userEmail;
     private final Date userCreateDate;
-    private final Integer phoneNum;
+    private final String phoneNum;
 //    private final int userFavoriteCategoryNum;
 
 }

@@ -1,10 +1,9 @@
 package javatreeex.moimmoimex.domain;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -20,22 +19,10 @@ public class UserDo {
     private String userPassword;
     private String userName;
     private String userNickname;
-
-    // private Long userIdentificationNum;
-
-    private int phoneNum;
-    private String birth; // 생년월일 문자열로 받음
+    private String phoneNum;
+    private String birth;
     private int categoryNum;
     private int hostLevelNum;
     private String location;
     private Date createDate;
-
-
-    /*
-    private String userPhoneNumber;
-    private int userFavoriteCategoryNum;
-    private int userLocationNum;
-    private String userCategory;
-    private Integer userHostLevel;
-    private LocalDate userCreateDate;*/
 }

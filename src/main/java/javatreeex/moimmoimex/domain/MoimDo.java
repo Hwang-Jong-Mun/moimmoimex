@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
@@ -15,16 +15,16 @@ public class MoimDo {
     private String moimTitle;
     private String moimMainContent;
     private String moimImage;
-    private Date moimCreateDate;
+    private LocalDate moimCreateDate;
     private int moimViewCount;
     private int moimCategoryNum;
-    private Date moimStartDate;
-    private Date moimEndDate;
-    private Date moimDeadLine;
+    private LocalDate moimStartDate;
+    private LocalDate moimEndDate;
+    private LocalDate moimDeadLine;
     private int moimMemberCount;
     private int moimMemberMax;
     private int moimPrice;
-    private Date moimJoinDate;
+    // private LocalDate moimJoinDate;
     private int moimDeadCheck;
     private int moimLocationNum;
 }
