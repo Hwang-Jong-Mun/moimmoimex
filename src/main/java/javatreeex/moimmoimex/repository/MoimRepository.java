@@ -2,9 +2,11 @@ package javatreeex.moimmoimex.repository;
 
 
 import javatreeex.moimmoimex.domain.MoimDo;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface MoimRepository {
 
     MoimDo save(MoimDo moim);
