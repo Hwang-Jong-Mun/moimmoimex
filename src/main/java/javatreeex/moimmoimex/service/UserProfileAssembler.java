@@ -5,7 +5,9 @@ import javatreeex.moimmoimex.domain.UserDo;
 import javatreeex.moimmoimex.domain.UserProfileDto;
 import javatreeex.moimmoimex.repository.ProfileRepository;
 import javatreeex.moimmoimex.repository.UserRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserProfileAssembler {
     private final UserRepository userRepository;
     private final ProfileRepository profileRepository;
