@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * USERS 테이블 정보 / 필수정보들
@@ -20,11 +20,22 @@ public class UserDo {
     private String userPassword;
     private String userName;
     private String userNickname;
+
+    // private Long userIdentificationNum;
+
+    private int phoneNum;
+    private String birth; // 생년월일 문자열로 받음
+    private int categoryNum;
+    private int hostLevelNum;
+    private String location;
+    private Date createDate;
+
+
+    /*
     private String userPhoneNumber;
-    private Long userIdentificationNum; // 주민등록번호 null 대비 일부러 Long. long x
     private int userFavoriteCategoryNum;
     private int userLocationNum;
     private String userCategory;
     private Integer userHostLevel;
-    private LocalDate userCreateDate;
+    private LocalDate userCreateDate;*/
 }

@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * Profile 테이블 정보 가져옴
@@ -20,5 +20,5 @@ public class ProfileDo {
     private String userIntroduction;
     private Double userMoimReviewScoreAvg;
     private int userHostingCount;
-    private LocalDate userBirth;
+    private Date userBirth;  // PROFILE 테이블에서 가져오는 출생년도
 }

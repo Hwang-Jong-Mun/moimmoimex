@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -16,7 +16,7 @@ public class ReviewDo {
     private int reviewScore; //별점
     private String reviewContent;
     private String reviewTitle;
-    private LocalDate reviewDate;
+    private Date reviewDate;
 }
 
 
