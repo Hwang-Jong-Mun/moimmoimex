@@ -1,7 +1,13 @@
-package JavaTree.moimmoim.domain;
+package javatreeex.moimmoimex.domain;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+@Data
+@AllArgsConstructor
 public class UserProfileDto {
     private final Long userIdNum;
     private final String userName;
@@ -14,56 +20,4 @@ public class UserProfileDto {
     private final LocalDate userCreateDate;
     private final int userFavoriteCategory;
 
-    public UserProfileDto(Long userIdNum, String userName, String userNickName, String userProfileImage, Double userMoimReviewScoreAvg, Integer userHostingCount, LocalDate userBirth, String userEmail, LocalDate userCreateDate, int userFavoriteCategory) {
-        this.userIdNum = userIdNum;
-        this.userName = userName;
-        this.userNickName = userNickName;
-        this.userProfileImage = userProfileImage;
-        this.userMoimReviewScoreAvg = userMoimReviewScoreAvg;
-        this.userHostingCount = userHostingCount;
-        this.userBirth = userBirth;
-        this.userEmail = userEmail;
-        this.userCreateDate = userCreateDate;
-        this.userFavoriteCategory = userFavoriteCategory;
-    }
-
-    public Long getUserIdNum() {
-        return userIdNum;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public String getUserNickName() {
-        return userNickName;
-    }
-
-    public String getUserProfileImage() {
-        return userProfileImage;
-    }
-
-    public Double getUserMoimReviewScoreAvg() {
-        return userMoimReviewScoreAvg;
-    }
-
-    public Integer getUserHostingCount() {
-        return userHostingCount;
-    }
-
-    public LocalDate getUserBirth() {
-        return userBirth;
-    }
-
-    public String getUserEmail() {
-        return userEmail;
-    }
-
-    public LocalDate getUserCreateDate() {
-        return userCreateDate;
-    }
-
-    public int getUserFavoriteCategory() {
-        return userFavoriteCategory;
-    }
 }

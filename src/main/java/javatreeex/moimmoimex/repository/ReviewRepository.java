@@ -1,6 +1,6 @@
-package JavaTree.moimmoim.repository;
+package javatreeex.moimmoimex.repository;
 
-import JavaTree.moimmoim.domain.ReviewDo;
+import javatreeex.moimmoimex.domain.ReviewDo;
 
 import java.util.List;
 

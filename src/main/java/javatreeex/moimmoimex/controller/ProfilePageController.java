@@ -1,7 +1,8 @@
-package JavaTree.moimmoim.controller;
+/*
+package javatreeex.moimmoimex.controller;
 
-import JavaTree.moimmoim.domain.ProfilePageDto;
-import JavaTree.moimmoim.service.ProfilePageService;
+import javatreeex.moimmoimex.domain.ProfilePageDto;
+import javatreeex.moimmoimex.service.ProfilePageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -42,4 +43,4 @@ public class ProfilePageController {
             return "create_profile_form";
         }
     }
-}
+}*/

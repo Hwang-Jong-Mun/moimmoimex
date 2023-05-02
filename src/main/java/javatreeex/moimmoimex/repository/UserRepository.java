@@ -1,8 +1,8 @@
-package JavaTree.moimmoim.repository;
+package javatreeex.moimmoimex.repository;
 
 
-import JavaTree.moimmoim.domain.ProfileDo;
-import JavaTree.moimmoim.domain.UserDo;
+import javatreeex.moimmoimex.domain.ProfileDo;
+import javatreeex.moimmoimex.domain.UserDo;
 
 import java.util.List;
 

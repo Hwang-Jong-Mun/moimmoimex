@@ -1,7 +1,7 @@
-package JavaTree.moimmoim.repository;
+package javatreeex.moimmoimex.repository;
 
-import JavaTree.moimmoim.domain.MoimDo;
-import JavaTree.moimmoim.domain.UserDo;
+import javatreeex.moimmoimex.domain.MoimDo;
+import javatreeex.moimmoimex.domain.UserDo;
 
 import java.util.HashMap;
 import java.util.Map;
