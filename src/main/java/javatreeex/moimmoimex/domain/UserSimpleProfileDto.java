@@ -16,4 +16,7 @@ public class UserSimpleProfileDto {
     private final String name;
     private final String nickName;
     private final String profileImage;
+
 }
+
+

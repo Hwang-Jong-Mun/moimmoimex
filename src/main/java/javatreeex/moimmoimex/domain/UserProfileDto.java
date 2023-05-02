@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -15,9 +15,10 @@ public class UserProfileDto {
     private final String userProfileImage;
     private final Double userMoimReviewScoreAvg;
     private final Integer userHostingCount;
-    private final LocalDate userBirth;
+    private final Date userBirth;
     private final String userEmail;
-    private final LocalDate userCreateDate;
-    private final int userFavoriteCategory;
+    private final Date userCreateDate;
+    private final Integer phoneNum;
+//    private final int userFavoriteCategoryNum;
 
 }
