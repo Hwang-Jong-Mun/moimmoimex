@@ -3,6 +3,7 @@ package javatreeex.moimmoimex.repository;
 
 import javatreeex.moimmoimex.domain.ProfileDo;
 import javatreeex.moimmoimex.domain.UserDo;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

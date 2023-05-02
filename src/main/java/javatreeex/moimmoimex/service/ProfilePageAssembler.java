@@ -1,9 +1,11 @@
+/*
 package javatreeex.moimmoimex.service;
 
 import javatreeex.moimmoimex.domain.*;
 import javatreeex.moimmoimex.repository.MoimRepository;
 import javatreeex.moimmoimex.repository.ProfileRepository;
 import javatreeex.moimmoimex.repository.ReviewRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -49,3 +51,4 @@ public class ProfilePageAssembler {
     }
 
 }
+*/

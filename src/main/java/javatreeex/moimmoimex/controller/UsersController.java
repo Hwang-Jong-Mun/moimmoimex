@@ -5,10 +5,7 @@ import javatreeex.moimmoimex.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequiredArgsConstructor
@@ -32,13 +29,29 @@ public class UsersController {
 
     @GetMapping("login")
     public String showLoginForm(Model model) {
-        model.addAttribute("user", new UserDo());
         return "loginForm";
     }
-
+/*
     @PostMapping("login")
     public String processLoginForm(@ModelAttribute("user") UserDo user, Model model) {
         UserDo authenticatedUser = userMapper.getUserByCredentials(user.getUserId(), user.getUserPassword());
+        if (authenticatedUser == null) {
+            model.addAttribute("errorMessage", "Invalid credentials");
+            return "loginForm";
+        } else {
+            model.addAttribute("user", authenticatedUser);
+            return "userPage";
+        }
+    }
+    */
+
+    @PostMapping("login")
+    public String login(@RequestParam("userId") String userId,
+                        @RequestParam("userPassword") String userPassword,
+                        Model model) {
+
+        UserDo authenticatedUser = userMapper.getUserByCredentials(userId, userPassword);
+
         if (authenticatedUser == null) {
             model.addAttribute("errorMessage", "Invalid credentials");
             return "loginForm";

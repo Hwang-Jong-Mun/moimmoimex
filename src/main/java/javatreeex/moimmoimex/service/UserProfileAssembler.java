@@ -1,3 +1,4 @@
+/*
 package javatreeex.moimmoimex.service;
 
 import javatreeex.moimmoimex.domain.ProfileDo;
@@ -40,3 +41,4 @@ public class UserProfileAssembler {
     }
 
 }
+*/
